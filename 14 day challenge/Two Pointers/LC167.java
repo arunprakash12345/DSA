@@ -19,10 +19,8 @@ public class LC167 {
                 result[1] = right + 1;
                 return result;
             } else if (sum > target) {
-                sum -= numbers[right];
                 right--;
             } else {
-                sum -= numbers[left];
                 left++;
             }
         }
